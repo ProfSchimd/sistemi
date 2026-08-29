@@ -1,0 +1,23 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 06dfe05e-76f4-4cd1-bf1a-5d236d39ebc8
+  title: Appunti di Sistemi e Reti
+  # description:
+  # keywords: []
+  authors: [ProfSchimd]
+  github: https://github.com/ProfSchimd/sistemi
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: README.md
+    - title: Terzo Anno
+      file: 3/terzoanno.md
+    - title: Quarto Anno
+      file: 4/quartoanno.md
+    - title: Quinto Anno
+      file: 5/quintoanno.md
+site:
+  template: book-theme
+  options:
+    favicon: favicon.ico
+    logo: favicon.ico
