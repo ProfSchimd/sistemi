@@ -12,8 +12,14 @@ project:
     - file: README.md
     - title: Terzo Anno
       file: 3/terzoanno.md
+      children:
+        - title: Componenti hardware
+          file: 3/hardware/componenti.md
     - title: Quarto Anno
       file: 4/quartoanno.md
+      children:
+        - title: Architetture e Protocolli di Rete
+          file: 4/architetture/protocolli.md
     - title: Quinto Anno
       file: 5/quintoanno.md
 site:
