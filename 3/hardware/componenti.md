@@ -88,7 +88,26 @@ Dal momento che la memoria centrale è *volatile*, serve una memoria che permett
 - **Disco Rigido Magnetico (HDD - Hard Disk Disk)** che utilizza dei dischi magnetici rotanti per memorizzare bit (polarità magnetica). Si tratta di una tecnologia che permette di mantenere enormi quantità di dati (alcuni TiB per ciascuna unità). Trattandosi di un sistema *meccanico* la velocità di accesso ai dati non è molto elevata (qualche centinaio di MiB al secondo).
 - **Unità a Stato Solido (SDD - Solid State Disk)** che utilizza delle memorie elettroniche per memorizzare i bit. Si tratta di una tecnologia più veloce rispetto ai HDD che può raggiungere velocità di trasferimento anche di GiB per secondo.[^2]
 
-### Scheda grafica
+- **Unità ottica** permettono la lettura e la scrittura su dischi ottici quali CD, DVD, Blu-ray, ... Questi dispositivi utilizzano un *laser* che rileva le variazioni di una superficie riflettente (il disco). Nei PC moderni non è comune trovare queste unità le cui funzionalità sono state sostituite da memorie esterne removibili (esempio USB Pen Drive o memorie SD).
+
+### Scheda grafica (Graphic Card)
+La **scheda grafica** (**graphic card**) rappresenta il componente che interagisce con lo schermo sul quale disegna (*render*) la scena da visualizzare (ad esempio in un gioco o nel browser). La scheda video può essere **integrata** nella scheda madre o può essere **discreta** ed inserita in un apposito slot della scheda madre (slot *PCI Express, PCIe*).
+
+Per interagire con lo schermo, la scheda video è dotata di **porte**. Oggi sono disponibili diversi standard per le porte video.
+- High-Definition Multimedia Interface (HDMI)
+- DisplayPort
+- Thunderbolt 
+- DVI (Digital Visual Interface)
+- Video Graphics Array (VGA)
+
+#### Graphic Processing Unit (GPU)
+Agli inizi degli anni 2000 nVidia (uno dei più importanti produttori di schede grafiche) ha introdotto una nuova tipologia di processori grafici chiamati *General Purpose GPU* ovvero **GPU (Graphic Processing Unit)** per il calcolo generale. Con questa novità, nVidia ha creato dispositivi che non solo permettono di *accelerare* le prestazioni grafiche, ma anche di accelerare il calcolo generico aiutando la CPU nell'esecuzione di alcuni programmi. Per eseguire il calcolo la GPU è dotata di una propria memoria di tipo GDDR (Graphics DDR).
+
+Con l'esplosione dell'AI (*Artificial Intelligence*), le GPU sono risultate le migliori piattaforme hardware sia per il *training* di modelli di AI sia per l'*inferenza*. Oggi, le GPU nVidia rappresentano hardware indispensabile per tutte le applicazioni di intelligenza aritificiale.
+
+:::{note} Non solo nVidia
+Il concetto di GPU non oggi un'esclusiva di nVidia. GPU sono presenti integrate negli stessi chip della CPU. Ad esempio, la serie M di Apple (M1, M2, ...) contiene nello stesso chip della CPU (ARM) anche una GPU. In questi sistemi, la stessa memoria RAM utilizza dalla CPU è utilizzata anche dalla GPU, si parla di memoria *condivisa*.
+:::
 
 ### Scheda di Rete
 
