@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="600" height="640" viewBox="0 0 600 640" version="1.1" id="svg39" sodipodi:docname="Modello OSI.svg" inkscape:version="1.4.2 (ebf0e94, 2025-05-08)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview39" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showguides="true" inkscape:zoom="1.7081048" inkscape:cx="396.3457" inkscape:cy="341.60667" inkscape:window-width="2400" inkscape:window-height="1261" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="g36">
+    <sodipodi:guide position="285,188.62255" orientation="1,0" id="guide41" inkscape:locked="false"/>
+    <sodipodi:guide position="315,200.91688" orientation="1,0" id="guide42" inkscape:locked="false"/>
+    <sodipodi:guide position="268.42615,165" orientation="0,-1" id="guide43" inkscape:locked="false"/>
+    <sodipodi:guide position="270.18248,241" orientation="0,-1" id="guide44" inkscape:locked="false"/>
+    <sodipodi:guide position="268.42615,317" orientation="0,-1" id="guide45" inkscape:locked="false"/>
+    <sodipodi:guide position="260.81538,393" orientation="0,-1" id="guide46" inkscape:locked="false"/>
+    <sodipodi:guide position="268.71887,545" orientation="0,-1" id="guide47" inkscape:locked="false"/>
+    <sodipodi:guide position="270.18248,321" orientation="0,-1" id="guide49" inkscape:locked="false"/>
+    <sodipodi:guide position="269.28849,325" orientation="0,-1" id="guide50" inkscape:locked="false"/>
+    <sodipodi:guide position="265.20621,249" orientation="0,-1" id="guide51" inkscape:locked="false"/>
+    <sodipodi:guide position="271.96431,245.03238" orientation="0,-1" id="guide52" inkscape:locked="false"/>
+    <sodipodi:guide position="575,442.99804" orientation="1,0" id="guide53" inkscape:locked="false"/>
+    <sodipodi:guide position="265.93801,173" orientation="0,-1" id="guide54" inkscape:locked="false"/>
+    <sodipodi:guide position="261.40082,169" orientation="0,-1" id="guide55" inkscape:locked="false"/>
+    <sodipodi:guide position="265.35257,21" orientation="0,-1" id="guide56" inkscape:locked="false"/>
+    <sodipodi:guide position="267.1089,17" orientation="0,-1" id="guide57" inkscape:locked="false"/>
+  </sodipodi:namedview>
+  <defs id="defs16">
+    <linearGradient id="gApp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a8fe6" id="stop1"/>
+      <stop offset="100%" stop-color="#2f73cf" id="stop2"/>
+    </linearGradient>
+    <linearGradient id="gPres" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fc45a" id="stop3"/>
+      <stop offset="100%" stop-color="#7ea43a" id="stop4"/>
+    </linearGradient>
+    <linearGradient id="gSess" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c95a52" id="stop5"/>
+      <stop offset="100%" stop-color="#a93a33" id="stop6"/>
+    </linearGradient>
+    <linearGradient id="gTrans" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#66c2d8" id="stop7"/>
+      <stop offset="100%" stop-color="#3b9bb3" id="stop8"/>
+    </linearGradient>
+    <linearGradient id="gNet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7a04f" id="stop9"/>
+      <stop offset="100%" stop-color="#f07d1d" id="stop10"/>
+    </linearGradient>
+    <linearGradient id="gDL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b5c8f" id="stop11"/>
+      <stop offset="100%" stop-color="#4b3d68" id="stop12"/>
+    </linearGradient>
+    <linearGradient id="gPhy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d22fc2" id="stop13"/>
+      <stop offset="100%" stop-color="#b10aa1" id="stop14"/>
+    </linearGradient>
+    <linearGradient id="gAccess" x1="239.25968" y1="617.46719" x2="239.25968" y2="814.95137" gradientTransform="scale(1.3165612,0.75955453)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8a78b8" id="stop15"/>
+      <stop offset="100%" stop-color="#6d5a93" id="stop16"/>
+    </linearGradient>
+    <style id="style16">
+      .baseApp{fill:#255fa8}
+      .basePres{fill:#688a30}
+      .baseSess{fill:#8e312b}
+      .baseTrans{fill:#2f7f93}
+      .baseNet{fill:#c96818}
+      .baseDL{fill:#3e3257}
+      .basePhy{fill:#930885}
+      .baseAccess{fill:#5a4a7a}
+    </style>
+    <linearGradient inkscape:collect="always" xlink:href="#gNet" id="linearGradient47" x1="163.44547" y1="753.55406" x2="163.44547" y2="888.46143" gradientTransform="scale(1.9272482,0.51887452)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient inkscape:collect="always" xlink:href="#gTrans" id="linearGradient48" x1="163.44547" y1="603.22869" x2="163.44547" y2="738.13607" gradientTransform="scale(1.9272482,0.51887452)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient inkscape:collect="always" xlink:href="#gApp" id="linearGradient50" x1="283.09587" y1="105.70624" x2="283.09587" y2="339.37267" gradientTransform="matrix(1.1126973,0,0,0.89871703,0,9.9999897)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <!-- Titoli -->
+  <text x="155" y="55" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" font-size="28px">OSI Model</text>
+  <text x="445" y="55" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" font-size="28px">TCP/IP</text>
+  <!-- Application -->
+  <g id="g18">
+    <rect x="25" y="99" rx="14" ry="14" width="260" height="68" class="baseApp" id="rect17"/>
+    <rect x="25" y="95" rx="14" ry="14" width="260" height="68" fill="url(#gApp)" id="rect18"/>
+    <text x="155" y="138" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Application Layer</text>
+  </g>
+  <g id="g20">
+    <rect x="25" y="175" rx="14" ry="14" width="260" height="68" class="basePres" id="rect19"/>
+    <rect x="25" y="171" rx="14" ry="14" width="260" height="68" fill="url(#gPres)" id="rect20"/>
+    <text x="155" y="214" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Presentation Layer</text>
+  </g>
+  <g id="g22">
+    <rect x="25" y="251" rx="14" ry="14" width="260" height="68" class="baseSess" id="rect21"/>
+    <rect x="25" y="247" rx="14" ry="14" width="260" height="68" fill="url(#gSess)" id="rect22"/>
+    <text x="155" y="290" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Session Layer</text>
+  </g>
+  <g id="g24">
+    <rect x="25" y="327" rx="14" ry="14" width="260" height="68" class="baseTrans" id="rect23"/>
+    <rect x="25" y="323" rx="14" ry="14" width="260" height="68" fill="url(#gTrans)" id="rect24"/>
+    <text x="155" y="366" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Transport Layer</text>
+  </g>
+  <g id="g26">
+    <rect x="25" y="403" rx="14" ry="14" width="260" height="68" class="baseNet" id="rect25"/>
+    <rect x="25" y="399" rx="14" ry="14" width="260" height="68" fill="url(#gNet)" id="rect26"/>
+    <text x="155" y="442" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Network Layer</text>
+  </g>
+  <g id="g28">
+    <rect x="25" y="479" rx="14" ry="14" width="260" height="68" class="baseDL" id="rect27"/>
+    <rect x="25" y="475" rx="14" ry="14" width="260" height="68" fill="url(#gDL)" id="rect28"/>
+    <text x="155" y="518" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Data Link Layer</text>
+  </g>
+  <g id="g30">
+    <rect x="25" y="555" rx="14" ry="14" width="260" height="68" class="basePhy" id="rect29"/>
+    <rect x="25" y="551" rx="14" ry="14" width="260" height="68" fill="url(#gPhy)" id="rect30"/>
+    <text x="155" y="594" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Physical Layer</text>
+  </g>
+  <!-- === TCP/IP === -->
+  <g id="g32" transform="translate(0,-9.9999924)">
+    <rect x="315" y="109" rx="14" ry="14" width="260" height="220" class="baseApp" id="rect31"/>
+    <rect x="315" y="104.99999" rx="14" ry="14" width="260" height="220" fill="url(#gApp)" id="rect32" style="fill:url(#linearGradient50)"/>
+    <text x="445" y="224" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Application Layer</text>
+  </g>
+  <g id="g34" transform="translate(0,10)">
+    <rect x="315" y="317" rx="14" ry="14" width="260" height="67.967621" class="baseTrans" id="rect33"/>
+    <rect x="315" y="313" rx="14" ry="14" width="260" height="68" fill="url(#gTrans)" id="rect34" style="fill:url(#linearGradient48)"/>
+    <text x="445" y="356" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Transport Layer</text>
+  </g>
+  <g id="g36" transform="translate(0,8)">
+    <rect x="315" y="395" rx="14" ry="14" width="260" height="68" class="baseNet" id="rect35"/>
+    <rect x="315" y="391" rx="14" ry="14" width="260" height="68" fill="url(#gNet)" id="rect36" style="fill:url(#linearGradient47)"/>
+    <text x="445" y="434" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px">Internet Layer</text>
+  </g>
+  <g id="g39" transform="translate(0,6)">
+    <rect x="315" y="473" rx="14" ry="14" width="260" height="144" class="baseAccess" id="rect37"/>
+    <rect x="315" y="469" rx="14" ry="14" width="260" height="144" fill="url(#gAccess)" id="rect38" style="fill:url(#gAccess)"/>
+    <text x="445" y="540" text-anchor="middle" font-weight="bold" font-family="'DejaVu Sans', sans-serif" fill="#fff" font-size="22px" id="text39"><tspan x="445" dy="0" id="tspan38">Network Access</tspan><tspan x="445" dy="30" id="tspan39">Layer</tspan></text>
+  </g>
+</svg>

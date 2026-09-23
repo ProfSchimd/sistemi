@@ -18,7 +18,7 @@ project:
     - title: Quarto Anno
       file: 4/quartoanno.md
       children:
-        - title: Architetture e Protocolli di Rete
+        - title: Protocolli e Modelli di Riferimento
           file: 4/architetture/protocolli.md
     - title: Quinto Anno
       file: 5/quintoanno.md

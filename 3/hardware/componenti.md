@@ -103,7 +103,7 @@ Per interagire con lo schermo, la scheda video è dotata di **porte**. Oggi sono
 #### Graphic Processing Unit (GPU)
 Agli inizi degli anni 2000 nVidia (uno dei più importanti produttori di schede grafiche) ha introdotto una nuova tipologia di processori grafici chiamati *General Purpose GPU* ovvero **GPU (Graphic Processing Unit)** per il calcolo generale. Con questa novità, nVidia ha creato dispositivi che non solo permettono di *accelerare* le prestazioni grafiche, ma anche di accelerare il calcolo generico aiutando la CPU nell'esecuzione di alcuni programmi. Per eseguire il calcolo la GPU è dotata di una propria memoria di tipo GDDR (Graphics DDR).
 
-Con l'esplosione dell'AI (*Artificial Intelligence*), le GPU sono risultate le migliori piattaforme hardware sia per il *training* di modelli di AI sia per l'*inferenza*. Oggi, le GPU nVidia rappresentano hardware indispensabile per tutte le applicazioni di intelligenza aritificiale.
+Con l'esplosione dell'AI (*Artificial Intelligence*), le GPU sono risultate le migliori piattaforme hardware sia per il *training* di modelli di AI sia per l'*inferenza*. Oggi, le GPU nVidia rappresentano hardware indispensabile per tutte le applicazioni di intelligenza artificiale.
 
 :::{note} Non solo nVidia
 Il concetto di GPU non oggi un'esclusiva di nVidia. GPU sono presenti integrate negli stessi chip della CPU. Ad esempio, la serie M di Apple (M1, M2, ...) contiene nello stesso chip della CPU (ARM) anche una GPU. In questi sistemi, la stessa memoria RAM utilizza dalla CPU è utilizzata anche dalla GPU, si parla di memoria *condivisa*.
