@@ -106,7 +106,7 @@ Agli inizi degli anni 2000 nVidia (uno dei più importanti produttori di schede 
 Con l'esplosione dell'AI (*Artificial Intelligence*), le GPU sono risultate le migliori piattaforme hardware sia per il *training* di modelli di AI sia per l'*inferenza*. Oggi, le GPU nVidia rappresentano hardware indispensabile per tutte le applicazioni di intelligenza artificiale.
 
 :::{note} Non solo nVidia
-Il concetto di GPU non oggi un'esclusiva di nVidia. GPU sono presenti integrate negli stessi chip della CPU. Ad esempio, la serie M di Apple (M1, M2, ...) contiene nello stesso chip della CPU (ARM) anche una GPU. In questi sistemi, la stessa memoria RAM utilizza dalla CPU è utilizzata anche dalla GPU, si parla di memoria *condivisa*.
+Il concetto di GPU non è oggi un'esclusiva di nVidia. GPU sono presenti integrate negli stessi chip della CPU. Ad esempio, la serie M di Apple (M1, M2, ...) contiene nello stesso chip della CPU (ARM) anche una GPU. In questi sistemi, la stessa memoria RAM utilizzata dalla CPU è utilizzata anche dalla GPU, si parla di memoria *condivisa*.
 :::
 
 ### Scheda di Rete
