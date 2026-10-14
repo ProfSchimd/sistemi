@@ -26,6 +26,10 @@ project:
       children:
         - title: Protocolli e Modelli di Riferimento
           file: 4/architetture/protocolli.md
+        - title: Livello Fisico
+          children:
+            - file: 4/fisico/banda-latenza.md
+            - file: 4/fisico/codifica.md
     - title: Quinto Anno
       file: 5/quintoanno.md
 site:
