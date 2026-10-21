@@ -37,6 +37,17 @@ project:
           file: 5/applicativo/servizi.md
           children:
             - file: 5/applicativo/http.md
+        - title: Sicurezza
+          file: 5/sicurezza/sicurezza.md
+          children:
+            - title: Framework CIA
+              file: 5/sicurezza/cia.md
+            - title: Network Address Translation (NAT)
+              file: 5/sicurezza/nat.md
+            - title: Firewall
+              file: 5/sicurezza/firewall.md
+            - title: Virtual Private Network (VPN)
+              file: 5/sicurezza/vpn.md
 site:
   template: book-theme
   options:
