@@ -7,4 +7,5 @@ requires-python = ">=3.13"
 dependencies = [
     "jupyter-book>=2.1.6",
     "jupyterlab>=4.6.3",
+    "mystmd>=1.11.0",
 ]

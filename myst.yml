@@ -52,7 +52,7 @@ project:
               file: 5/sicurezza/vpn.md
 site:
   template: book-theme
-  robots: disallow
   options:
     favicon: favicon.ico
     logo: favicon.ico
+    robots: disallow
