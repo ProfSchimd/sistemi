@@ -108,16 +108,30 @@ di codice (alcuni codici importanti vengono riportati).
     * `500` Internal Server Error
     * `503` Service Unavailable
 
-## Sessione HTTP
-Il protocollo HTTP è un protocollo *stateless* nel senso che due connessione tra gli
-stessi client e server, non viene ricordata dal server. Nel caso di *autenticazione*
-(operazione estremamente frequente nel Web di oggi), ogni nuova richiesta (esempio
-ogni nuova pagina) finirebbe con il richiedere le credenziali di accesso, cosa che
-renderebbe inutilizzabile un sito.
+## Autorizzazione HTTP
+HTTP prevede un meccanismo di autenticazione estremamente basilare che, di fatto, non viene quasi mai utilizzato. Il meccanismo si basa sulla possibilità da parte del client di fornire *nome utente* e *password* al server utilizzando gli header HTTP.
 
-Per ovviare a questo problema, le applicazioni web, che utilizzano quasi esclusivamente
-il protocollo HTTP, utilizzano un meccanismo di *sessione*, solitamente basato su
-token memorizzati nella cache le browser mediante i cosiddetti **cookies**.
+Più nello specifico, utilizzando un header `Authorization`, il cliente deve spedire la coppia nome utente e password separate da punto e virgola, ad esempio `admin:admin`, tale stringa deve però essere codificata in [base64](https://en.wikipedia.org/wiki/Base64). Oltre alle credenziale, lo stesso header deve anche contenere indicazioni sul tipo di autenticazione utilizzata. Nel seguente esempio. il client manda le credenziali `admin:admin` utilizzando un'autenticazione di tipo *Basic*. 
+
+```http
+Authorization: Basic YWRtaW46YWRtaW4=
+```
+
+Dal lato server, si deve prevedere un meccanismo per gestire le autorizzazioni di accesso alle risorse che utilizzi il meccanismo sopra descritto. In ogni caso, il client deve spedire l'header di autorizzazione ad ogni nuova richiesta HTTP.[^1]
+
+```{danger} Sicurezza
+Il meccanismo di autorizzazione di HTTP non prevede alcuna cifratura eccetto quella offerta dal protocollo HTTPS. Per questo motivo, tale modalità di autenticazione è da considerarsi non sicura, quindi da evitare o utilizzare solo in casi molto specifici.
+```
+
+Oltre alla sicurezza, il meccanismo di autorizzazione di HTTP presenta altri svantaggi.
+- Non esiste un vero e proprio sistema di gestione della sessione, completamente demandata al client. In particolare, il protocollo non prevede il *logout*.
+- Anche se il supporto all'autorizzazione è ampiamente disponibile nei browser, la *user experience* (gestione utenze, password, sessioni, ...) è estremamente limitata.
+- In generale, tutto ciò che ha a che fare con la gestione della sessione lato server (scadenza, revoca accesso, cambio password, ...) non è possibile.
+
+## Sessione HTTP
+Il protocollo HTTP è un protocollo *stateless* nel senso che due connessione tra gli stessi client e server, non viene ricordata dal server. Inoltre il meccanismo di autorizzazione descritto sopra risolve tale problema solo in parte e non è da considerasi sicuro.
+
+ Nel caso di siti che richiedono *autenticazione* (operazione estremamente frequente nel Web di oggi) le applicazioni web, che utilizzano quasi esclusivamente il protocollo HTTP, utilizzano un meccanismo di *sessione*, solitamente basato su token memorizzati nella cache le browser mediante i cosiddetti **cookies**.
 
 ### Cookies
 I **cookie** sono dei dati che vengono spediti da un server mediante il protocollo HTTP
@@ -207,3 +221,4 @@ I cookie possono contenere informazioni sensibili e sono quindi soggetti ai vari
 [4]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 [5]: https://howhttps.works/
 
+[^1]: Essendo le credenziali spedite in chiaro, questo rappresenta un notevole punto di vulnerabilità.
