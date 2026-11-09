@@ -21,6 +21,7 @@ project:
           - file: 3/arch/von-neumann.md
           - file: 3/arch/ram.md
           - file: 3/arch/cpu.md
+          - file: 3/arch/riscv.md
     - title: Quarto Anno
       file: 4/quartoanno.md
       children:
