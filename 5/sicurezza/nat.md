@@ -1,5 +1,9 @@
 ---
 title: Network Address Translation (NAT)
+abbreviations:
+    IP: Internet Protocol
+    NAT: Network Address Translation
+    NAPT: Network Address/Port Translation
 ---
 
 ## Cos'è un NAT
@@ -43,6 +47,6 @@ Funzionamento di NAT in *port forwarding*, anziché sostituire i soli indirizzi 
 (Michel Bakni, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons)
 ```
 
-Nell'immagine sopra si può vedere il funzionamento di un NAT in modalità port forwarding (a volte si usa la sigla NAPT per questi dispositivi). L'idea è che per distinguere le connessioni che arrivano dalla rete locale (chiamata *inside realm* nell'immagine), il dispositivo NAT utilizza le proprie porte di uscita per le connessioni. In altre parole un NAT di questo tipo, non solo cambia l'indirizzo IP da quello privato a quello pubblico, ma cambia anche la porta della sorgente utilizzandone una che esso ha libera (NATP: Network Address/Port Translation). In questo modo si risolve il problema dell'identificare le connessioni verso lo stesso server effettuate da più host della rete privata. Infatti il NAT utilizzerà l'IP del server e la porta per capire a quale host della rete privata dovrà inviare il pacchetto. In pratica un dispositivo NAPT opera la sostituzione di un *socket*[^1] che è l'equivalente di un indirizzo a livello di trasporto.
+Nell'immagine sopra si può vedere il funzionamento di un NAT in modalità port forwarding (a volte si usa la sigla NAPT per questi dispositivi). L'idea è che per distinguere le connessioni che arrivano dalla rete locale (chiamata *inside realm* nell'immagine), il dispositivo NAT utilizza le proprie porte di uscita per le connessioni. In altre parole un NAT di questo tipo, non solo cambia l'indirizzo IP da quello privato a quello pubblico, ma cambia anche la porta della sorgente utilizzandone una che esso ha libera (NAPT: Network Address/Port Translation). In questo modo si risolve il problema dell'identificare le connessioni verso lo stesso server effettuate da più host della rete privata. Infatti il NAT utilizzerà l'IP del server e la porta per capire a quale host della rete privata dovrà inviare il pacchetto. In pratica un dispositivo NAPT opera la sostituzione di un *socket*[^1] che è l'equivalente di un indirizzo a livello di trasporto.
 
 [^1]: Ricordiamo che un *socket* è una coppia di valori `IP` e `porta`, ad esempio `200.100.10.1:80`.

@@ -1,3 +1,14 @@
+---
+abbreviations:
+    AAA: Authentication, Authorization, Accounting
+    CIA: Confidentiality, Integrity, Availability
+    DoS: Denial of Service
+    DDoS: Distributed Denial of Service
+    MFA: Multi-Factor Authentication
+    SSO: Single Sign On
+    OTP: One-Time Password
+---
+
 # Framework CIA
 
 Oggi l'accesso alla rete Internet, usata da miliardi di persone, avviene principalmente utilizzando connessioni *wireless* le quali, utilizzando un *mezzo condiviso*, rendono potenzialmente visibili i dati scambiati. Un software di *sniffing* della rete, quale Wireshark (vedi figura sotto), è sufficiente per osservare tutto il *traffico di rete*, rendendo le comunicazioni visibili *in chiaro*, a meno di non *offuscare* i dati scambiati. L'intercettazione delle conversazioni, non è l'unico problema legato alla sicurezza delle reti, un amministratore ed un progettista di rete devono garantire che la rete risponda ai dei *requisiti di sicurezza* che andiamo ad analizzare in questa sezione.

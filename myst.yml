@@ -22,6 +22,11 @@ project:
           - file: 3/arch/ram.md
           - file: 3/arch/cpu.md
           - file: 3/arch/riscv.md
+        - title: Cybersecurity
+          file: 3/cyber/cyber-security.md
+          children:
+          - file: 3/cyber/security-intro.md
+          - file: 3/cyber/cyber-glossary.md
     - title: Quarto Anno
       file: 4/quartoanno.md
       children:

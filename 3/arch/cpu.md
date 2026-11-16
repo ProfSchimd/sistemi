@@ -1,3 +1,15 @@
+---
+abbreviations:
+    ALU: Arithmetic Logic Unit
+    CPU: Central Processing Unit
+    IR: Instruction Register
+    ISA: Instruction Set Architecture
+    MAR: Memory Address Register
+    MDR: Memory Data Register
+    PC: Program Counter
+    RAM: Random Access Memory
+---
+
 # Central Processing Unit (CPU)
 
 La **CPU** (**Central Processing Unit** - *unità centrale di elaborazione*) rappresenta il "cervello" di un calcolatore ed esegue le **istruzioni** che compongono un *programma*. Tali istruzioni sono molto semplici ad esempio: 
@@ -5,7 +17,7 @@ La **CPU** (**Central Processing Unit** - *unità centrale di elaborazione*) rap
 * salva un numero in memoria,
 * leggi un carattere dalla tastiera.
 
-L'insieme delle istruzioni che una CPU è in grado di eseguire si chiama **Instruction Set Architecture ISA** (ISA) (*repertorio di istruzioni*), tale insieme dipende dal come la CPU è organizzata internamente (**micro-architettura**). Ad esempio, se una CPU non ha un circuito per dividere due numeri, la CPU non ci sarà l'istruzione di divisione. In questo caso si dovrà scrivere una sequenza di istruzioni (un *algoritmo*) per fare la divisione usando solo operazioni presenti nell'ISA.
+L'insieme delle istruzioni che una CPU è in grado di eseguire si chiama **Instruction Set Architecture ISA** (*repertorio di istruzioni*), tale insieme dipende dal come la CPU è organizzata internamente (**micro-architettura**). Ad esempio, se una CPU non ha un circuito per dividere due numeri, la CPU non ci sarà l'istruzione di divisione. In questo caso si dovrà scrivere una sequenza di istruzioni (un *algoritmo*) per fare la divisione usando solo operazioni presenti nell'ISA.
 
 Anche se CPU diverse (es. Intel vs Apple Silicon) hanno micro-architetture diverse, tutte contengono tre componenti fondamentali:
 1. Una spazio di memoria interno composto da **registri** (**register file**);
@@ -62,7 +74,7 @@ System.out.println(a + " " + b); // stampa "100 256"
 Per eseguire le istruzioni, la CPU le deve recuperare della memoria RAM. A questo scopo, la CPU utilizza i seguenti registri:
 * il **Program Counter, `PC`**  (*contatore di programma*) e
 * l'**Instruction Register, `IR`** (*registro di istruzione*).
-* il **Memory Address Register `MAR`** e il **Memory Data Register, **Memory Data Register `MDR`** per l'accesso alla memoria.
+* il **Memory Address Register `MAR`** e il **Memory Data Register `MDR`** per l'accesso alla memoria.
 
 Il *fetch* delle istruzioni si compone delle seguenti fasi.
 1. Il valore che è nel `PC` viene copiato nel `MAR` e si attiva la linea `Read` sul bus controllo.
