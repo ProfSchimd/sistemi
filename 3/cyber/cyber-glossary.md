@@ -2,6 +2,9 @@
 
 :::{glossary}
 
+Mitigazione (*mitigation*)
+: Azione che riduce l'impatto negativo di attacchi
+
 Vulnerabilità (*vulnerability*)
 : Un *punto debole* del sistema che può essere sfruttato (*exploited*) per portare a termine un *attacco*
 

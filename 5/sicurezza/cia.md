@@ -5,18 +5,19 @@ abbreviations:
     DoS: Denial of Service
     DDoS: Distributed Denial of Service
     MFA: Multi-Factor Authentication
+    RADIUS: Remote Authentication Dial-In User Service
     SSO: Single Sign On
     OTP: One-Time Password
 ---
 
 # Framework CIA
 
-Oggi l'accesso alla rete Internet, usata da miliardi di persone, avviene principalmente utilizzando connessioni *wireless* le quali, utilizzando un *mezzo condiviso*, rendono potenzialmente visibili i dati scambiati. Un software di *sniffing* della rete, quale Wireshark (vedi figura sotto), è sufficiente per osservare tutto il *traffico di rete*, rendendo le comunicazioni visibili *in chiaro*, a meno di non *offuscare* i dati scambiati. L'intercettazione delle conversazioni, non è l'unico problema legato alla sicurezza delle reti, un amministratore ed un progettista di rete devono garantire che la rete risponda ai dei *requisiti di sicurezza* che andiamo ad analizzare in questa sezione.
+Oggi l'accesso alla rete Internet, usata da miliardi di persone, avviene principalmente utilizzando connessioni *wireless* le quali, utilizzando un *mezzo condiviso*, rendono potenzialmente visibili i dati scambiati. Un software di *sniffing* della rete, quale Wireshark (vedi figura sotto), è sufficiente per osservare tutto il *traffico di rete*, rendendo le comunicazioni visibili *in chiaro*, a meno di non *offuscare* i dati scambiati. L'intercettazione delle conversazioni non è l'unico problema di sicurezza che amministratori ed esperti di *cybersecurity* devono affrontare. Più in generale oggi si richiede che una rete possieda adeguati *requisiti di sicurezza* che analizziamo in questa lezione.
 
 ```{figure} /5/img/wireshark-screenshot.png
 :width: 80%
 
-Il programma Wireshark per lo *sniffing* del trafficodi rete.
+Una schermate del programma [Wireshark](https://www.wireshark.org/) per lo *sniffing* del trafficodi rete.
 ```
 
 (triade-CIA)=
@@ -120,31 +121,27 @@ Il primo aspetto definito dal framework AAA è l'**autenticazione** (**authentic
 Vediamo ora alcuni delle più comuni modalità di autenticazione.
 
 Credenziali username e password
-
 :   Ogni *utente* è identificato da un nome, solitamente una stringa;
     inoltre una seconda stringa è utilizzata come “parola d'ordine” (la
     password) che deve essere nota solo all'utente associato al
     nome. La coppia *username* e *password* rappresenta le
     *credenziali* di autenticazione.
 
-OAuth (Single Sign On - SSO)
-
+OAuth (Single Sign On)
 :   Un servizio esterno (tipici esempi sono Google, Facebook, Microsoft,
     ...) a cui si è registrati ed autenticati (ad esempio con username e
     password) si occupa di “testimoniare” l'identità. OAuth è un
     protocollo per gestire questo tipo di autenticazione. Si parla a
-    volte di *Single Sign On* perché l'idea è che una volta autenticato
+    volte di *Single Sign On (SSO)* perché l'idea è che una volta autenticato
     (*signed on*) su un servizione (es. Google) posso accedere ad altri
     servizi.
 
 Autenticazione Biometrica
-
 :   Un qualche tipo parametro biometrico (impronta digitale, retina,
     voce, ...) viene utilizzato per identificare l'utente che è l'unico
     a possedere quella “lettura” biometrica.
 
-One-Time Password (OTP)
-
+One-Time Password
 :   Dato un nome utente da autenticare, il sistema genera una password
     temporanea che viene comunicata mediante “canali” alternativi.
     L'utente riceve ed inserisce tale password che non è più valida (si
@@ -169,7 +166,17 @@ L'ultimo aspetto del framework AAA è l'**accounting**, che consiste nella regis
 
 ### Esempio: protocollo RADIUS
 
-Un esempio concreto di applicazione del framework AAA è il protocollo **RADIUS** (**Remote Authentication Dial-In User Service**), un protocollo client-server ampiamente utilizzato per il controllo centralizzato degli accessi alle reti. RADIUS opera tipicamente in scenari di accesso remoto o di rete locale, dove un *Network Access Server* (NAS) delega as un server RADIUS la gestione delle operazioni di sicurezza. In questo contesto, l'**Authentication** viene utilizzata per verificare l'identità dell'utente tramite credenziali come username e password; l'**Authorization** definisce le risorse e i servizi a cui l'utente autenticato può accedere, specificando ad esempio *policy* di accesso o parametri di connessione; infine, l'**Accounting** consente di registrare le attività dell'utente, come la durata della sessione e il volume di traffico generato, supportando funzioni di monitoraggio, auditing e fatturazione.
+Un esempio concreto di applicazione del framework AAA è il protocollo **RADIUS** (**Remote Authentication Dial-In User Service**, @rfc2865), un protocollo di livello applicativo basato su meccanismo client-server ed ampiamente utilizzato per il controllo centralizzato degli accessi alle reti. 
+
+RADIUS opera tipicamente in scenari di accesso remoto o di rete locale, dove un *Network Access Server* (NAS) delega ad un server RADIUS la gestione delle operazioni di sicurezza. In questo contesto, l'**Authentication** viene utilizzata per verificare l'identità dell'utente tramite credenziali come username e password; l'**Authorization** definisce le risorse e i servizi a cui l'utente autenticato può accedere, specificando ad esempio *policy* di accesso o parametri di connessione; infine, l'**Accounting** consente di registrare le attività dell'utente, come la durata della sessione e il volume di traffico generato, supportando funzioni di monitoraggio, *auditing* e fatturazione.
+
+:::{prf:example} 802.1X
+RADIUS è utilizzato nel protocollo di autenticazione 802.1X per l'accesso autenticato a LAN o Wireless LAN.
+:::
+
+:::{seealso} Diameter
+Un protocollo che estende le funzionalità di RADIUS è il protocollo Diameter
+:::
 
 [^1]: CIA è la sigla più utilizzata, tuttavia essa non tiene conto di
     altri requisiti quali *Authenticity* (autenticità) e

@@ -20,3 +20,7 @@ Una **vulnerabilità** (**vulnerabilità**) è un *punto debole* del sistema che
 :::{prf:definition} Attacco
 Un **attacco** (**attack**) è l'azione (tipicamente volontaria) che sfrutta una *vulnerabilità* per concretizzare una *minaccia* e recare un qualche danno agli *asset* di un'entità (aziende, persone, governi, ...).
 :::
+
+:::{prf:definition} Mitigazione
+Un intervento di **mitigazione** (**mitigation**) è una qualsiasi azione che abbia lo scopo di diminuire gli effetti dannosi di un attacco.
+:::
