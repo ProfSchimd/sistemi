@@ -2,6 +2,12 @@
 
 :::{glossary}
 
+Asset
+: Qualsiasi risorsa (hardware, software, dati, ...) che abbia un valore importante per l'organizzazione o la persona. I *cybersecurity* gli asset sono gli “oggetti” che vogliamo proteggere.
+
+Minaccia
+: La possibilità che si portino a termine operazioni dagli esiti potenzialmente dannosi per un'entità (azienda, persona, ente, ...). 
+
 Mitigazione (*mitigation*)
 : Azione che riduce l'impatto negativo di attacchi
 
