@@ -56,6 +56,19 @@ project:
               file: 5/sicurezza/tls.md
             - title: Virtual Private Network (VPN)
               file: 5/sicurezza/vpn.md
+        - title: Crittografia
+          file: 5/crypto/crittografia.md
+          children:
+            - title: Algoritmo di Cifratura
+              file: 5/crypto/algoritmi-cifratura.md
+            - title: Algoritmi a chiave simmetrica
+              file: 5/crypto/alg-private.md
+            - title: Algoritmi a chiave pubblica
+              file: 5/crypto/alg-public.md
+            - title: Funzioni hash crittografiche
+              file: 5/crypto/crypto-hash.md
+            - title: Applicazioni della crittografica
+              file: 5/crypto/applied-crypto.md
 site:
   template: book-theme
   options:

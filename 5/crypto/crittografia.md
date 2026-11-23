@@ -1,0 +1,3 @@
+# Crittografia
+
+La **crittografia** è la scienza che studia la *scrittura nascosta*, in ambito informatico questo significa occuparsi di comunicazioni *protette* con qualche sistema crittografico. In questo capitolo studieremo **algoritmi crittografici** e i loro utilizzi. La caratteristica di questi algoritmi è che sia "facile" *decifrare* un messaggi, se si è in possesso della **chiave di cifratura**, ma molto "difficile" (di fatto impossibile) in caso contrario. Per questo motivo la crittografia è una scienza che coinvolge aspetti avanzati di matematica e informatica.
