@@ -22,6 +22,7 @@ project:
           - file: 3/arch/ram.md
           - file: 3/arch/cpu.md
           - file: 3/arch/riscv.md
+          - file: 3/arch/subroutine.md
         - title: Cybersecurity
           file: 3/cyber/cyber-security.md
           children:
