@@ -5,6 +5,7 @@ docker build -t mystmd-python .
 # Run the container
 docker run -it --rm \
   -p 3000:3000 \
+  -p 3100:3100 \
   -v ~/myst-project:/workspace \
   mystmd-python
 ```
